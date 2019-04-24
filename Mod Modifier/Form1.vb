@@ -21,6 +21,10 @@ Public Class Form1
                 Dim luckfilenam = Path.GetFileName(file)
                 lvLuckyBlocks.Items.Add(luckfilenam)
             Next
+        Else
+            lvLuckyBlocks.Enabled = False
+            btnAddLB.Enabled = False
+            btnLuckDel.Enabled = False
         End If
     End Sub
 

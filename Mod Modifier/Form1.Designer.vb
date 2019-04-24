@@ -31,9 +31,9 @@ Partial Class Form1
         Me.btnDelArch = New System.Windows.Forms.Button()
         Me.lvArchive = New System.Windows.Forms.ListBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnLuckDel = New System.Windows.Forms.Button()
         Me.lvLuckyBlocks = New System.Windows.Forms.ListBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAddMod = New System.Windows.Forms.Button()
         Me.btnAddLB = New System.Windows.Forms.Button()
         Me.ofdLuck = New System.Windows.Forms.OpenFileDialog()
@@ -137,6 +137,17 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Lucky Block Addons"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label1.Location = New System.Drawing.Point(6, 433)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(274, 51)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Currently there is no support for archiving " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "lucky block mods. Hopefully this wi" &
+    "ll " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "become a feature in future versions."
+        '
         'btnLuckDel
         '
         Me.btnLuckDel.BackColor = System.Drawing.Color.Red
@@ -155,17 +166,6 @@ Partial Class Form1
         Me.lvLuckyBlocks.Name = "lvLuckyBlocks"
         Me.lvLuckyBlocks.Size = New System.Drawing.Size(281, 340)
         Me.lvLuckyBlocks.TabIndex = 4
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label1.Location = New System.Drawing.Point(6, 433)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(292, 51)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Currently no support for archiving lucky block" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "mods. Hopefully this will become " &
-    "a feature" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "in future versions."
         '
         'btnAddMod
         '
@@ -191,12 +191,10 @@ Partial Class Form1
         '
         'ofdLuck
         '
-        Me.ofdLuck.FileName = "OpenFileDialog1"
         Me.ofdLuck.InitialDirectory = "C:\Users\Ataul\AppData\Roaming\.minecraft\addons\lucky_block\"
         '
         'ofdMods
         '
-        Me.ofdMods.FileName = "OpenFileDialog1"
         Me.ofdMods.InitialDirectory = "C:\Users\Ataul\AppData\Roaming\.minecraft\mods\"
         '
         'Form1
